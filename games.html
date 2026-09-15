@@ -3,45 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jagster Gaming</title>
+    <title>Stream Schedule | Jagster's Realm</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700&family=Bungee&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="site-header">
-        <a class="brand" href="index.html">Jagster Gaming</a>
-        <a class="home-link" href="index.html">← Home</a>
+        <a class="brand" href="index.html"><img src="jagsters-realm-logo.jpg" alt="Jagster's Realm logo"><span>JAGSTER'S REALM</span></a>
+        <nav aria-label="Main navigation"><a href="index.html">Home</a><a href="index.html#videos">Videos</a><a class="nav-youtube" href="https://www.youtube.com/@JagstersRealmYT" target="_blank" rel="noopener noreferrer">YouTube</a></nav>
     </header>
-    <main>
-        <section class="intro">
-            <p class="eyebrow">LIVE GAMING</p>
-            <h1>🎮 I Play Games</h1>
-            <p>Welcome to my gaming page! I love exploring new worlds and sharing my gameplay.</p>
+    <main class="schedule-page">
+        <section class="page-intro">
+            <p class="eyebrow">CATCH THE NEXT ONE</p>
+            <h1>STREAM<br><span>SCHEDULE</span></h1>
+            <p>All times are Indian Standard Time (IST). Scroll sideways to see every day.</p>
         </section>
-        <section class="schedule" aria-labelledby="schedule-title">
-            <div class="section-heading">
-                <div>
-                    <p class="eyebrow">THIS WEEK</p>
-                    <h2 id="schedule-title">Streaming calendar</h2>
+        <section class="schedule-panel" aria-labelledby="schedule-title">
+            <div class="section-title">
+                <div><p class="eyebrow">THIS WEEK</p><h2 id="schedule-title">The weekly lineup</h2></div>
+                <span class="scroll-hint">Scroll to explore <span aria-hidden="true">&rarr;</span></span>
+            </div>
+            <!-- Update each game name and time below when your streaming schedule changes. -->
+            <div class="schedule-scroll" role="region" aria-label="Weekly streaming schedule" tabindex="0">
+                <div class="calendar">
+                    <article class="day-card off"><h3>MON</h3><time datetime="16:00">20:00</time><p>Apex Legends</p></article>
+                    <article class="day-card featured"><h3>TUE</h3><time datetime="17:00">20:00</time><p>Valorant</p><span>LIVE</span></article>
+                    <article class="day-card"><h3>WED</h3><time datetime="19:30">21:30</time><p>RPG GAMES</p></article>
+                    <article class="day-card off"><h3>THU</h3><p>Offline For Some Shit</p></article>
+                    <article class="day-card"><h3>FRI</h3><time datetime="17:00">22:00</time><p>Some More APex</p></article>
+                    <article class="day-card"><h3>SAT</h3><time datetime="18:00">22:00</time><p>Horror game night</p></article>
+                    <article class="day-card"><h3>SUN</h3><time datetime="17:00">22:00</time><p>Weekend Random Stream</p></article>
                 </div>
-                <span class="timezone">All times IST</span>
-            </div>
-            <!-- Change the game titles and times below to match your real stream schedule. -->
-            <div class="calendar" role="region" aria-label="Weekly streaming schedule">
-                <article class="day-card"><h3>Monday</h3><p class="off-air">Off air</p></article>
-                <article class="day-card live"><h3>Tuesday</h3><time datetime="20:00">8:00 PM</time><p>Valorant ranked</p></article>
-                <article class="day-card"><h3>Wednesday</h3><time datetime="19:30">7:30 PM</time><p>Minecraft builds</p></article>
-                <article class="day-card"><h3>Thursday</h3><p class="off-air">Off air</p></article>
-                <article class="day-card"><h3>Friday</h3><time datetime="21:00">9:00 PM</time><p>Viewer games</p></article>
-                <article class="day-card"><h3>Saturday</h3><time datetime="18:00">6:00 PM</time><p>Story game night</p></article>
-                <article class="day-card"><h3>Sunday</h3><time datetime="17:00">5:00 PM</time><p>Weekend chill stream</p></article>
             </div>
         </section>
-        <section class="watch" aria-labelledby="watch-title">
-            <h2 id="watch-title">📺 Watch my gameplay</h2>
-            <p>Subscribe so you do not miss the next stream.</p>
-            <a class="button" href="https://www.youtube.com/@JagstersRealmYT
-" target="_blank" rel="noopener noreferrer">Visit my YouTube channel</a>
+        <section class="schedule-cta">
+            <img src="jagsters-realm-logo.jpg" alt="" aria-hidden="true">
+            <div><p class="eyebrow">DO NOT MISS A STREAM</p><h2>Subscribe to the realm.</h2></div>
+            <a class="button button-pink" href="https://www.youtube.com/@JagstersRealmYT" target="_blank" rel="noopener noreferrer">Go to YouTube</a>
         </section>
     </main>
+    <footer>JAGSTER'S REALM <span> / </span> PLAY. STREAM. REPEAT.</footer>
 </body>
 </html>
